@@ -38,3 +38,16 @@ switch(operator) {
         break;
 }
 }
+
+//create variables to call each digit and add to display box
+const displayBox = document.querySelector("input")
+
+const digits = document.querySelectorAll(".digit")
+    digits.forEach((num) => {
+        num.addEventListener ("click", () => 
+            displayBox.value == 0? displayBox.value = num.value: displayBox.value = String(displayBox.value) + 
+            String(num.value))
+    } )
+
+
+    
