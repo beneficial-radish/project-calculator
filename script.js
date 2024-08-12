@@ -17,10 +17,10 @@ function divide(a,b) {
     quotient = Number(a)/Number(b)
     return quotient
 }
-
-let firstNumber = ""
 let secondNumber = ""
+let firstNumber = ""
 let operator = ""
+
 
 function operate(firstNumber, operator, secondNumber) {
 switch(operator) {
@@ -40,14 +40,15 @@ switch(operator) {
 }
 
 //create variables to call each digit and add to display box
+let displayValue = 0
 const displayBox = document.querySelector("input")
-
 const digits = document.querySelectorAll(".digit")
+
 digits.forEach((num) => {
     num.addEventListener ("click", () => 
     displayBox.value == 0? displayBox.value = num.value: displayBox.value = String(displayBox.value) + 
     String(num.value))
+    num.addEventListener("click", () => firstNumber = displayBox.value)
     } )
-
 
     
