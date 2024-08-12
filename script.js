@@ -65,6 +65,8 @@ switch(operator) {
         solution = divide(firstNumber,secondNumber)
         break;
 }
+    solution = Number(parseFloat(solution.toFixed(4)))
+    solution = String(solution)
     firstNumber = solution
     secondNumber = ""
     displayBox.value = solution

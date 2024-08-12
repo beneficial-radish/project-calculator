@@ -1,0 +1,50 @@
+.container {
+    width: 400px;
+    height: 500px;
+    background-color: pink;
+    padding: 20px;
+}
+
+.displayInput {
+    padding: 20px;
+    margin: 20px;
+    background-color: lightgrey
+}
+
+.buttonsContainer {
+    display: flex;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+   
+
+}
+.digitsContainer {
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+background-color: antiquewhite;
+flex: 2;
+align-items: center;
+}
+
+.operatorsContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    flex: 1;
+    align-items: center;
+}
+
+.buttons {
+   width: 40px;
+   height: 40px;
+   margin: 9px;
+   
+}
+
+.clear {
+    width: min-content;
+}
+
+
